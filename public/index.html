@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Booking System</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@600&display=swap" rel="stylesheet">
+
+  <script src="javascripts/prac.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <br>
+      <div id="title">
+        <h1>Booking System</h1>
+      </div>
+    </header>
+
+    <div id="search">
+      <br>
+      <div id="box">
+
+        <div id="input_container">
+            <h2>Where are you planning to go? Search the rooms!</h2>
+            <p class="p1">From very gorgeous room to very cozy room</p>
+
+            <form>
+                <div class="input_box">
+                    <select id="size">
+                      <option value="" disabled selected>Room Size</option>
+                      <option value="S">Small</option>
+                      <option value="M">Midium</option>
+                      <option value="L">Large</option>
+                    </select>
+                    <select id="rating">
+                      <option value="" disabled selected>Room Rating</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <select id="facility">
+                      <option value="" disabled selected>Facility</option>
+                      <option value="balcony">Balcony</option>
+                      <option value="kitchen">Kitchen</option>
+                      <option value="bathtub">Bathtub</option>
+                    </select>
+                </div>
+                <div class="input_box">
+                    <input type="date" id="check_in" placeholder="Check In Date">
+                    </input>
+                    <input type="date" id="check_out" placeholder="Check Out Date">
+                    </input>
+
+                    <button type="submit" id="search_btn" onclick="search()">Search</button>
+                </div>
+            </form>
+        </div>
+
+        </div>
+    </div>
+
+    <section id="section">
+      <Br>
+      <div id="box">
+        <div id="input_container">
+            <h2>Here is the list of rooms!</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Room No</th>
+                <th>Room Size</th>
+                <th>Star Rating</th>
+                <th>Facility</th>
+              </tr>
+            </thead>
+            <tbody id="result">
+              <tr>
+                <th>Room No</th>
+                <th>Room Size</th>
+                <th>Star Rating</th>
+                <th>Facility</th>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
